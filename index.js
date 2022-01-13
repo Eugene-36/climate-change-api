@@ -1,7 +1,11 @@
 const PORT = process.env.PORT || 8000;
-const express = require('express');
-const axios = require('axios');
-const cheerio = require('cheerio');
+//const chalk = require('chalk');
+import chalk from 'chalk';
+import express from 'express';
+import axios from 'axios';
+import cheerio from 'cheerio';
+
+//const successMsg = chalk.bgKeyword('green').white;
 
 const app = express();
 
@@ -133,4 +137,6 @@ app.get('/news/:newspaperId', (req, res) => {
     .catch((err) => console.log(err));
 });
 
-app.listen(PORT, () => console.log(`Server running on PORT ${PORT}`));
+app.listen(PORT, () =>
+  console.log(chalk.bgGreen.whiteBright(`Server running on PORT ${PORT}`))
+);

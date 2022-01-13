@@ -1,6 +1,7 @@
 {
   "name": "climate-change-api",
   "version": "1.0.0",
+  "type": "module",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -18,6 +19,7 @@
   "homepage": "https://github.com/Eugene-36/climate-change-api#readme",
   "dependencies": {
     "axios": "^0.24.0",
+    "chalk": "^5.0.0",
     "cheerio": "^1.0.0-rc.10",
     "express": "^4.17.2",
     "nodemon": "^2.0.15"
